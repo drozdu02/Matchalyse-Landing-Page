@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="440" viewBox="0 0 720 440" fill="none">
+  <rect width="720" height="440" rx="24" fill="#0a0a0a"/>
+  <rect x="1" y="1" width="718" height="438" rx="23" stroke="#BFFF00" stroke-opacity="0.35"/>
+  <rect x="80" y="140" width="88" height="200" rx="8" fill="#BFFF00" fill-opacity="0.85"/>
+  <rect x="200" y="200" width="88" height="140" rx="8" fill="#BFFF00" fill-opacity="0.55"/>
+  <rect x="320" y="120" width="88" height="220" rx="8" fill="#BFFF00" fill-opacity="0.7"/>
+  <rect x="440" y="180" width="88" height="160" rx="8" fill="#BFFF00" fill-opacity="0.45"/>
+  <rect x="560" y="100" width="88" height="240" rx="8" fill="#BFFF00" fill-opacity="0.9"/>
+  <text x="48" y="72" fill="#ffffff" font-family="system-ui,sans-serif" font-size="28" font-weight="600">Modele ML</text>
+  <text x="48" y="108" fill="#a3a3a3" font-family="system-ui,sans-serif" font-size="16">Walidacja vs baseline</text>
+</svg>

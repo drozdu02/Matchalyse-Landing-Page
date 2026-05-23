@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="440" viewBox="0 0 720 440" fill="none">
+  <rect width="720" height="440" rx="24" fill="#0a0a0a"/>
+  <rect x="1" y="1" width="718" height="438" rx="23" stroke="#BFFF00" stroke-opacity="0.35"/>
+  <rect x="72" y="200" width="120" height="56" rx="12" stroke="#BFFF00" stroke-width="2"/>
+  <rect x="300" y="200" width="120" height="56" rx="12" stroke="#BFFF00" stroke-width="2"/>
+  <rect x="528" y="200" width="120" height="56" rx="12" stroke="#BFFF00" stroke-width="2"/>
+  <path d="M192 228 H300 M420 228 H528" stroke="#BFFF00" stroke-width="2"/>
+  <polygon points="288,228 300,222 300,234" fill="#BFFF00"/>
+  <polygon points="516,228 528,222 528,234" fill="#BFFF00"/>
+  <text x="48" y="72" fill="#ffffff" font-family="system-ui,sans-serif" font-size="28" font-weight="600">Pipeline</text>
+  <text x="48" y="108" fill="#a3a3a3" font-family="system-ui,sans-serif" font-size="16">Dane ’ model ’ output</text>
+</svg>

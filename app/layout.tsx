@@ -16,7 +16,9 @@ const fontBody = DM_Sans({
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pl">
-      <body className={`${fontDisplay.variable} ${fontBody.variable}`}>
+      <body
+        className={`dark bg-black text-white ${fontDisplay.variable} ${fontBody.variable}`}
+      >
         {children}
       </body>
     </html>

@@ -2,7 +2,7 @@ import { LandingPage } from "@/components/landing-page"
 import { getDictionary } from "@/lib/i18n/get-dictionary"
 import type { Metadata } from "next"
 
-const dictionary = getDictionary("pl")
+const dictionary = getDictionary("en")
 
 export const metadata: Metadata = {
   title: dictionary.meta.title,
@@ -15,6 +15,6 @@ export const metadata: Metadata = {
   },
 }
 
-export default function Page() {
-  return <LandingPage locale="pl" />
+export default function EnglishPage() {
+  return <LandingPage locale="en" />
 }

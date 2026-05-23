@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="440" viewBox="0 0 720 440" fill="none">
+  <rect width="720" height="440" rx="24" fill="#0a0a0a"/>
+  <rect x="1" y="1" width="718" height="438" rx="23" stroke="#BFFF00" stroke-opacity="0.35"/>
+  <rect x="64" y="120" width="592" height="240" rx="16" stroke="#ffffff" stroke-opacity="0.15"/>
+  <rect x="96" y="152" width="200" height="72" rx="8" fill="#ffffff" fill-opacity="0.06"/>
+  <rect x="320" y="152" width="304" height="72" rx="8" fill="#BFFF00" fill-opacity="0.15"/>
+  <rect x="96" y="248" width="528" height="16" rx="4" fill="#ffffff" fill-opacity="0.08"/>
+  <rect x="96" y="280" width="400" height="16" rx="4" fill="#ffffff" fill-opacity="0.08"/>
+  <text x="48" y="72" fill="#ffffff" font-family="system-ui,sans-serif" font-size="28" font-weight="600">Dashboard</text>
+  <text x="48" y="108" fill="#a3a3a3" font-family="system-ui,sans-serif" font-size="16">Wyniki i metodologia</text>
+</svg>
