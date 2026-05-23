@@ -26,19 +26,12 @@ export const en: Dictionary = {
     pl: "PL",
   },
   hero: {
-    badge: "Statistics · machine learning · your own decisions",
     title: "Match analysis",
     titleLine2: "grounded in data and models",
     description:
       "We run quantitative analysis of sports outcomes: data preparation, statistical and machine-learning models, probability calibration, and validation on historical data. We compare model outputs with years of our own pre-match analysis, including the assessment of betting decisions, so results can be interpreted critically. Estimates are delivered with methodology notes—without claims about a certain match outcome.",
     ctaApp: "Go to the app",
     ctaLearn: "Learn more",
-    stats: [
-      { k: "Modeling", v: "ML and statistical models" },
-      { k: "Output", v: "probabilities and intervals" },
-      { k: "Validation", v: "backtest and calibration" },
-      { k: "Communication", v: "methodology and limits" },
-    ],
   },
   brandShowcase: {
     heading: "Matchalyse — visuals and materials",
@@ -49,7 +42,6 @@ export const en: Dictionary = {
     title: "Who we are",
     paragraphs: [
       "We independently conduct quantitative analysis of sports data, combining interest in sport and the wider sports industry with a rigorous methodological approach. We analyse matches quantitatively—studying tempo, chance quality, team form, and contextual factors that surface-level statistics miss.",
-      "The pipeline covers the full cycle: data acquisition and cleaning, statistical and machine-learning models, probability calibration, and validation on historical data. Every model is back-tested before operational use.",
       "We do not treat algorithm outputs as final verdicts—they are a starting point for expert review. We run systematic pre-match analysis, including our own risk assessment and betting decisions; that experience helps verify model consistency with sporting context and surface signals formal models may miss.",
     ],
     pillars: [
@@ -77,7 +69,7 @@ export const en: Dictionary = {
   howItWorks: {
     title: "How it works",
     description:
-      "Stages of the pipeline: data preparation, modeling, communicating probabilities, and a final recommendation with substantive rationale.",
+      "We use our own in-house application that collects and processes data — enabling systematic match analysis.",
     aside: "pipeline",
     steps: [
       {
@@ -153,11 +145,15 @@ export const en: Dictionary = {
       },
     ],
   },
+  appComingSoon: {
+    title: "App coming soon",
+    message:
+      "We're preparing the full Matchalyse experience. Thank you for your interest — launch is just around the corner.",
+    closeLabel: "Close",
+  },
   footer: {
     description:
       "We independently conduct quantitative sports data analysis, combining interest in sport with statistical methodology: predictive models, probability calculus, and explicit model assumptions and limits—instead of ready-made forecasts without context.",
-    subdescription:
-      "The product is developed iteratively; methodological consistency and transparency for users remain the priority.",
     sectionsTitle: "Sections",
     productTitle: "Product",
     infoTitle: "Info",
@@ -165,6 +161,9 @@ export const en: Dictionary = {
     teamProfile: "Team profile: statistics, modeling, and data analytics",
     contactLabel: "Contact:",
     contactEmail: "matchalyse@gmail.com",
+    socialTitle: "Social media",
+    instagramLabel: "Instagram — Matchalyse",
+    tiktokLabel: "TikTok — Matchalyse",
     disclaimer:
       "The “Scope” section is descriptive; KPIs will be published once methodology is set and a sufficiently large sample is collected.",
   },

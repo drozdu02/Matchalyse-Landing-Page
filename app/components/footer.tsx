@@ -1,4 +1,5 @@
-import { APP_URL_PLACEHOLDER } from "@/constants/app-url-placeholder"
+import { AppCtaLink } from "@/components/app-cta-link"
+import { SocialLinks } from "@/components/social-links"
 import type { Locale } from "@/lib/i18n/config"
 import { getDictionary } from "@/lib/i18n/get-dictionary"
 
@@ -17,9 +18,16 @@ export default function Footer({ locale }: { locale: Locale }) {
             <p className="mt-5 max-w-md text-sm leading-relaxed text-white">
               {t.description}
             </p>
-            <p className="mt-4 text-xs leading-relaxed text-white">
-              {t.subdescription}
-            </p>
+            <div className="mt-8">
+              <div className="text-xs font-medium tracking-[0.22em] text-white uppercase">
+                {t.socialTitle}
+              </div>
+              <SocialLinks
+                className="mt-4"
+                instagramLabel={t.instagramLabel}
+                tiktokLabel={t.tiktokLabel}
+              />
+            </div>
           </div>
 
           <div className="grid gap-8 sm:grid-cols-3 lg:col-span-7">
@@ -45,12 +53,9 @@ export default function Footer({ locale }: { locale: Locale }) {
                 {t.productTitle}
               </div>
               <div className="mt-4 flex flex-col gap-2 text-sm">
-                <a
-                  className="text-white underline-offset-4 hover:underline"
-                  href={APP_URL_PLACEHOLDER}
-                >
+                <AppCtaLink className="text-sm text-white">
                   {t.appLink}
-                </a>
+                </AppCtaLink>
               </div>
             </div>
 

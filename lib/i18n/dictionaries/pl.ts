@@ -26,19 +26,12 @@ export const pl: Dictionary = {
     pl: "PL",
   },
   hero: {
-    badge: "Statystyka · uczenie maszynowe · własne decyzje",
     title: "Analiza meczów",
     titleLine2: "w oparciu o dane i modele",
     description:
       "Prowadzimy analizę ilościową wyników sportowych: przygotowanie danych, modele statystyczne i uczenie maszynowe, kalibracja prawdopodobieństw oraz weryfikacja na materiale historycznym. Wyniki modeli zestawiamy z wieloletnią praktyką własnej analizy przedmeczowej, w tym w kontekście oceny decyzji zakładowych; umożliwia to krytyczną interpretację wyników. Oszacowania przekazujemy wraz z opisem metodyki, bez roszczeń co do pewnego wyniku spotkania.",
     ctaApp: "Przejdź do aplikacji",
     ctaLearn: "Dowiedz się więcej",
-    stats: [
-      { k: "Modelowanie", v: "ML i modele statystyczne" },
-      { k: "Output", v: "prawdopodobieństwa i przedziały" },
-      { k: "Weryfikacja", v: "backtest i walidacja" },
-      { k: "Komunikacja", v: "metodologia i ograniczenia" },
-    ],
   },
   brandShowcase: {
     heading: "Matchalyse — wizualizacje i materiały",
@@ -49,7 +42,6 @@ export const pl: Dictionary = {
     title: "Kim jesteśmy",
     paragraphs: [
       "Autorzy niezależnie prowadzą analizę ilościową danych sportowych; łączą zainteresowanie sportem i szeroko rozumianą branżą sportową z rygorystycznym podejściem metodycznym. Zajmujemy się ilościową analizą meczów — badamy tempo gry, jakość sytuacji bramkowych, formę drużyn oraz czynniki kontekstowe, które statystyki powierzchniowe pomijają.",
-      "Pipeline obejmuje pełny cykl: pozyskiwanie i czyszczenie danych, budowę modeli statystycznych i uczenia maszynowego, kalibrację prawdopodobieństw oraz walidację na danych historycznych. Wyniki każdego modelu poddawane są testom wstecznym przed wykorzystaniem operacyjnym.",
       "Wyniki algorytmów nie traktujemy jako rozstrzygnięcia ostatecznego: stanowią one punkt wyjścia do oceny merytorycznej. Prowadzimy systematyczną analizę przedmeczową, w tym w kontekście własnej oceny ryzyka i decyzji zakładowych; doświadczenie to wykorzystujemy do weryfikacji spójności wyników modelu z kontekstem sportowym oraz do identyfikacji sygnałów, których formalny model może nie uchwycić.",
     ],
     pillars: [
@@ -77,7 +69,7 @@ export const pl: Dictionary = {
   howItWorks: {
     title: "Jak to działa",
     description:
-      "Kolejne etapy pipeline'u: przygotowanie danych, modelowanie, komunikacja prawdopodobieństw oraz rekomendacja końcowa z uzasadnieniem merytorycznym.",
+      "Korzystamy z własnej, opracowanej aplikacji, która pobiera i przetwarza dane — dzięki temu możliwa jest systematyczna analiza meczów.",
     aside: "pipeline",
     steps: [
       {
@@ -153,11 +145,15 @@ export const pl: Dictionary = {
       },
     ],
   },
+  appComingSoon: {
+    title: "Aplikacja wkrótce dostępna",
+    message:
+      "Pracujemy nad uruchomieniem pełnej wersji Matchalyse. Dziękujemy za zainteresowanie — udostępnimy ją już wkrótce.",
+    closeLabel: "Zamknij",
+  },
   footer: {
     description:
       "Autorzy niezależnie prowadzą analizę ilościową danych sportowych; łączą zainteresowanie sportem i branżą sportową z metodyką statystyczną: modele predykcyjne, rachunek prawdopodobieństwa oraz jawny opis założeń i ograniczeń modeli — zamiast gotowych prognoz bez kontekstu merytorycznego.",
-    subdescription:
-      "Produkt rozwijany jest iteracyjnie; priorytetem pozostaje spójność metodyczna i transparentność wobec użytkownika.",
     sectionsTitle: "Sekcje",
     productTitle: "Produkt",
     infoTitle: "Info",
@@ -165,6 +161,9 @@ export const pl: Dictionary = {
     teamProfile: "Profil zespołu: statystyka, modelowanie i analityka danych",
     contactLabel: "Kontakt:",
     contactEmail: "matchalyse@gmail.com",
+    socialTitle: "Social media",
+    instagramLabel: "Instagram — Matchalyse",
+    tiktokLabel: "TikTok — Matchalyse",
     disclaimer:
       "Sekcja „Zakres” ma charakter opisowy; wskaźniki KPI zostaną opublikowane po ustaleniu metodyki i zebraniu próby o wystarczającej wielkości.",
   },

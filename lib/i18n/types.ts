@@ -22,11 +22,6 @@ export type Step = {
 
 export type StatHighlight = TextBlock
 
-export type HeroStat = {
-  k: string
-  v: string
-}
-
 export type Dictionary = {
   locale: Locale
   meta: {
@@ -46,13 +41,11 @@ export type Dictionary = {
     pl: string
   }
   hero: {
-    badge: string
     title: string
     titleLine2: string
     description: string
     ctaApp: string
     ctaLearn: string
-    stats: HeroStat[]
   }
   brandShowcase: {
     heading: string
@@ -83,9 +76,13 @@ export type Dictionary = {
     aside: string
     highlights: StatHighlight[]
   }
+  appComingSoon: {
+    title: string
+    message: string
+    closeLabel: string
+  }
   footer: {
     description: string
-    subdescription: string
     sectionsTitle: string
     productTitle: string
     infoTitle: string
@@ -93,6 +90,9 @@ export type Dictionary = {
     teamProfile: string
     contactLabel: string
     contactEmail: string
+    socialTitle: string
+    instagramLabel: string
+    tiktokLabel: string
     disclaimer: string
   }
 }
