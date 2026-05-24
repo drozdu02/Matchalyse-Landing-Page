@@ -15,8 +15,7 @@ export const pl: Dictionary = {
     cta: "Przejdź do aplikacji",
     links: [
       { label: "O nas", href: `#${SECTION_IDS.about}` },
-      { label: "Jak to działa", href: `#${SECTION_IDS.how}` },
-      { label: "Możliwości", href: `#${SECTION_IDS.features}` },
+      { label: "Metoda", href: `#${SECTION_IDS.how}` },
       { label: "Zakres", href: `#${SECTION_IDS.stats}` },
     ],
   },
@@ -35,115 +34,52 @@ export const pl: Dictionary = {
   },
   brandShowcase: {
     heading: "Matchalyse — wizualizacje i materiały",
-    marqueeLabel: "Galeria logo i grafik produktu",
+    slidesTitle: "Przykładowe trafione analizy",
+    slidesDescription:
+      "Wybrane kupony z ostatnich miesięcy — różne dyscypliny i typy zakładów, oparte na naszej przedmeczowej analizie. Prezentujemy je jako dokumentację pracy, nie jako gwarancję przyszłych wyników.",
+    marqueeLabel: "Galeria trafionych kuponów",
     scrollHint: "Przewiń w poziomie — myszką, dotykiem lub klawiaturą",
   },
   about: {
     title: "Kim jesteśmy",
     paragraphs: [
-      "Autorzy niezależnie prowadzą analizę ilościową danych sportowych; łączą zainteresowanie sportem i szeroko rozumianą branżą sportową z rygorystycznym podejściem metodycznym. Zajmujemy się ilościową analizą meczów — badamy tempo gry, jakość sytuacji bramkowych, formę drużyn oraz czynniki kontekstowe, które statystyki powierzchniowe pomijają.",
-      "Wyniki algorytmów nie traktujemy jako rozstrzygnięcia ostatecznego: stanowią one punkt wyjścia do oceny merytorycznej. Prowadzimy systematyczną analizę przedmeczową, w tym w kontekście własnej oceny ryzyka i decyzji zakładowych; doświadczenie to wykorzystujemy do weryfikacji spójności wyników modelu z kontekstem sportowym oraz do identyfikacji sygnałów, których formalny model może nie uchwycić.",
+      "Sport fascynuje nas od lat — nie tylko jako widowisko, ale jako zjawisko, które można zmierzyć, zbadać i zrozumieć głębiej. Przez lata samodzielnie analizowaliśmy mecze i wydarzenia z różnych dyscyplin, rozwijając własne metody i spojrzenie na to, co naprawdę dzieje się podczas rywalizacji. Badamy tempo i dynamikę starć, jakość wypracowywanych sytuacji, formę zawodników i drużyn oraz czynniki kontekstowe, które w standardowych statystykach po prostu znikają.",
+      "Wyniki naszych modeli to punkt wyjścia — nie ostateczny werdykt. Każdą analizę przedmeczową prowadzimy systematycznie, uwzględniając również kontekst oceny ryzyka i decyzji zakładowych. To właśnie to doświadczenie pozwala nam weryfikować, czy sygnały algorytmiczne są spójne z rzeczywistością sportową — i wychwytywać to, czego żaden formalny model samodzielnie nie dostrzeże.",
     ],
-    pillars: [
-      {
-        title: "Podejście analityczne",
-        body: "Modele statystyczne i uczenie maszynowe traktujemy jako narzędzia pomocnicze, a nie werdykt ostateczny. Wyniki zestawiamy z wieloletnim doświadczeniem własnej analizy przedmeczowej (w tym w ocenie decyzji zakładowych w oparciu o własne oszacowania): weryfikujemy założenia, jakość danych oraz zgodność z kontekstem sportowym.",
-      },
-      {
-        title: "Transparentność co do niepewności",
-        body: "Podajemy prawdopodobieństwa wraz z przedziałami ufności, a nie wyłącznie punktowe prognozy. Nie udzielamy komentarzy ex post do przebiegu spotkań; treści publikowane są wyłącznie przedmeczowo.",
-      },
-      {
-        title: "Autorski pipeline",
-        body: "Cechy do modeli budujemy od podstaw — od pozyskania danych, przez inżynierię zmiennych, po kalibrację i testy na danych historycznych.",
-      },
-      {
-        title: "Przejrzysta prezentacja wyników",
-        body: "Wyniki przedstawiamy w sposób umożliwiający ocenę metodologii: jakie zmienne uwzględnia model, jakie są jego ograniczenia oraz na jakiej podstawie wyznaczono wskazaną wartość prawdopodobieństwa.",
-      },
-    ],
-    legalLabel: "Nota prawna:",
-    legalNote:
-      "udział w grach losowych i zakładach bukmacherskich wiąże się z ryzykiem utraty środków. Nie udzielamy gwarancji co do wyniku spotkania — przekazujemy oszacowania prawdopodobieństwa wraz z opisem założeń modelu w celu umożliwienia oceny podstaw analitycznych.",
   },
   howItWorks: {
-    title: "Jak to działa",
+    title: "Metoda",
     description:
-      "Korzystamy z własnej, opracowanej aplikacji, która pobiera i przetwarza dane — dzięki temu możliwa jest systematyczna analiza meczów.",
-    aside: "pipeline",
+      "Korzystamy z własnej aplikacji, która zbiera i przetwarza dane. Poniżej cztery etapy — od wejścia do modelu po rekomendację z kontekstem sportowym.",
+    aside: "etapy",
     steps: [
       {
         n: "01",
         title: "Dane",
-        body: "Pozyskujemy statystyki meczowe i kontekst, standaryzujemy format i kontrolujemy jakość wejścia, żeby błędy danych nie przenosiły się do modelu.",
+        body: "Agregacja danych z wielu źródeł, standaryzacja, kontrola jakości i wprowadzenie do modelu.",
       },
       {
         n: "02",
-        title: "Model ML",
-        body: "Budujemy modele w odniesieniu do baseline'ów; nacisk kładziemy na walidację krzyżową, stabilność estymacji i dobór cech uzasadniony danymi.",
+        title: "Predykcja",
+        body: "Wprowadzenie przetworzonych danych do własnych modeli uczenia maszynowego, trenowanie i generowanie predykcji.",
       },
       {
         n: "03",
         title: "Prawdopodobieństwo",
-        body: "Prezentujemy rozkłady i oszacowania prawdopodobieństwa dla wybranych scenariuszy, wraz z informacją o niepewności tam, gdzie jest to możliwe.",
+        body: "Generowanie rozkładów i oszacowań prawdopodobieństwa dla kluczowych scenariuszy, z uwzględnieniem przedziałów niepewności.",
       },
       {
         n: "04",
         title: "Rekomendacja",
-        body: "Rekomendacja wynika z porównania oszacowań z założeniami modelu i z kontekstem rynkowym; gdy sygnał jest słaby lub niejednoznaczny, komunikujemy to wprost.",
-      },
-    ],
-  },
-  features: {
-    title: "Możliwości",
-    description:
-      "Cztery obszary pracy: od analizy opisowej i modeli predykcyjnych po sformułowanie prawdopodobieństwa oraz weryfikację strategii na danych historycznych.",
-    cards: [
-      {
-        title: "Analiza statystyczna",
-        body: "Porównujemy tempo, jakość sytuacji bramkowych, skuteczność i kontekst meczu, z ostrożnością wobec wniosków z pojedynczych spotkań.",
-        meta: "baseline i kontrola jakości",
-      },
-      {
-        title: "Modele predykcyjne",
-        body: "Łączymy modele klasyczne z uczeniem maszynowym; najpierw walidacja i porównanie z punktami odniesienia, potem ewentualna rozbudowa struktury.",
-        meta: "walidacja i stabilność",
-      },
-      {
-        title: "Rachunek prawdopodobieństwa",
-        body: "Formułujemy oszacowania prawdopodobieństwa i scenariusze zamiast jednoznacznych prognoz wyniku bez rozłożenia niepewności.",
-        meta: "rozkłady i przedziały",
-      },
-      {
-        title: "Backtesting",
-        body: "Sprawdzamy strategie i reguły decyzyjne na materiale historycznym, z naciskiem na powtarzalność i ograniczenia wnioskowania w czasie.",
-        meta: "dane historyczne",
+        body: "Interpretacja wyników predykcji i formułowanie rekomendacji z uwzględnieniem kontekstu sportowego i wiedzy własnej.",
       },
     ],
   },
   stats: {
-    title: "Zakres i ograniczenia",
+    title: "Zakres",
+    aside: "status",
     description:
-      "Produkt rozwijany jest w sposób ciągły. Poniżej określamy obszar działania oraz zakres odpowiedzialności — w tym brak publikacji liczb bez pokrycia w danych i ustalonej metodyce.",
-    aside: "zakres",
-    highlights: [
-      {
-        title: "Ocena jakości modeli",
-        body: "Skuteczność i kalibrację sprawdzamy procedurami walidacji oraz testami na danych historycznych. Nie publikujemy pojedynczego wskaźnika procentowego bez kontekstu próby i metodyki.",
-      },
-      {
-        title: "Systematyczna praca analityczna",
-        body: "Zwiększamy liczbę przejrzanych spotkań w ramach stałego procesu — tak, by wnioski wynikały z powtarzalności, a nie z wyboru przykładów.",
-      },
-      {
-        title: "Rozszerzanie pokrycia rozgrywek",
-        body: "Stopniowo poszerzamy zestaw lig i rozgrywek, zachowując jednolite standardy danych. Nie obiecujemy od razu pełnego pokrycia wszystkich ryneków.",
-      },
-      {
-        title: "Reprezentatywność próby",
-        body: "Unikamy wniosków opartych wyłącznie na pojedynczych meczach. Decyzje metodologiczne opieramy na próbach o rozmiarze i jakości pozwalającej na sensowną inferencję.",
-      },
-    ],
+      "Produkt rozwijamy iteracyjnie. Kalibrację i jakość modeli sprawdzamy walidacją i testami na danych historycznych; nie publikujemy pojedynczych procentów bez kontekstu próby i metodyki. Wnioski budujemy na powtarzalnym procesie, a nie na pojedynczych meczach; pokrycie lig poszerzamy stopniowo, bez obietnicy natychmiastowego pełnego rynku.",
   },
   appComingSoon: {
     title: "Aplikacja wkrótce dostępna",
@@ -152,19 +88,11 @@ export const pl: Dictionary = {
     closeLabel: "Zamknij",
   },
   footer: {
-    description:
-      "Autorzy niezależnie prowadzą analizę ilościową danych sportowych; łączą zainteresowanie sportem i branżą sportową z metodyką statystyczną: modele predykcyjne, rachunek prawdopodobieństwa oraz jawny opis założeń i ograniczeń modeli — zamiast gotowych prognoz bez kontekstu merytorycznego.",
-    sectionsTitle: "Sekcje",
-    productTitle: "Produkt",
-    infoTitle: "Info",
     appLink: "Aplikacja",
-    teamProfile: "Profil zespołu: statystyka, modelowanie i analityka danych",
-    contactLabel: "Kontakt:",
     contactEmail: "matchalyse@gmail.com",
-    socialTitle: "Social media",
     instagramLabel: "Instagram — Matchalyse",
     tiktokLabel: "TikTok — Matchalyse",
     disclaimer:
-      "Sekcja „Zakres” ma charakter opisowy; wskaźniki KPI zostaną opublikowane po ustaleniu metodyki i zebraniu próby o wystarczającej wielkości.",
+      "Treści mają charakter wyłącznie informacyjny i nie stanowią rekomendacji zakładu, porady prawnej ani gwarancji wyników. Decyzje podejmujesz na własną odpowiedzialność. Usługa dla osób pełnoletnich (18+). Udział w grach hazardowych wiąże się z ryzykiem utraty środków.",
   },
 }

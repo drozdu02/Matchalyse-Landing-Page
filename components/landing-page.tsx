@@ -1,9 +1,7 @@
 import Navbar from "@/app/components/navbar"
-import Hero from "@/app/components/hero"
 import BrandShowcase from "@/app/components/brand-showcase"
 import About from "@/app/components/about"
 import HowItWorks from "@/app/components/how-it-works"
-import Features from "@/app/components/features"
 import Stats from "@/app/components/stats"
 import Footer from "@/app/components/footer"
 import { SetHtmlLang } from "@/components/set-html-lang"
@@ -22,10 +20,8 @@ export function LandingPage({ locale }: { locale: Locale }) {
         <div className="bg-black text-white">
           <Navbar />
           <BrandShowcase locale={locale} />
-          <Hero locale={locale} />
           <About locale={locale} />
           <HowItWorks locale={locale} />
-          <Features locale={locale} />
           <Stats locale={locale} />
           <Footer locale={locale} />
         </div>

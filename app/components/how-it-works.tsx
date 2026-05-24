@@ -6,7 +6,7 @@ export default function HowItWorks({ locale }: { locale: Locale }) {
   const t = getDictionary(locale).howItWorks
 
   return (
-    <section id={SECTION_IDS.how} className="scroll-mt-24 py-20 sm:py-28">
+    <section id={SECTION_IDS.how} className="scroll-mt-24 py-24 sm:py-32 lg:py-36">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex items-end justify-between gap-8">
           <div>
@@ -22,7 +22,7 @@ export default function HowItWorks({ locale }: { locale: Locale }) {
           </div>
         </div>
 
-        <div className="mt-12 grid gap-4 lg:grid-cols-4">
+        <div className="mt-16 grid gap-4 sm:mt-20 lg:grid-cols-4">
           {t.steps.map((s, idx) => (
             <article
               key={s.n}
